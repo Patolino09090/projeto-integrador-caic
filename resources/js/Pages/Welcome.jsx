@@ -1,14 +1,14 @@
-import { Link, Head } from '@inertiajs/react';
+import { Link, Head } from "@inertiajs/react";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
             <div className="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-                <div className="sm:fixed sm:top-0 sm:right-0 p-6 text-end">
+                <div className="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
                     {auth.user ? (
                         <Link
-                            href={route('dashboard')}
+                            href={route("dashboard")}
                             className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                         >
                             Dashboard
@@ -16,15 +16,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     ) : (
                         <>
                             <Link
-                                href={route('login')}
+                                href={route("login")}
                                 className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                             >
                                 Log in
                             </Link>
 
                             <Link
-                                href={route('register')}
-                                className="ms-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                                href={route("register")}
+                                className="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                             >
                                 Register
                             </Link>
@@ -75,9 +75,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel has wonderful documentation covering every aspect of the framework.
-                                        Whether you are a newcomer or have prior experience with Laravel, we recommend
-                                        reading our documentation from beginning to end.
+                                        Laravel has wonderful documentation
+                                        covering every aspect of the framework.
+                                        Whether you are a newcomer or have prior
+                                        experience with Laravel, we recommend
+                                        reading our documentation from beginning
+                                        to end.
                                     </p>
                                 </div>
 
@@ -121,9 +124,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                        development. Check them out, see for yourself, and massively level up your
-                                        development skills in the process.
+                                        Laracasts offers thousands of video
+                                        tutorials on Laravel, PHP, and
+                                        JavaScript development. Check them out,
+                                        see for yourself, and massively level up
+                                        your development skills in the process.
                                     </p>
                                 </div>
 
@@ -168,9 +173,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the
-                                        latest and most important news in the Laravel ecosystem, including new package
-                                        releases and tutorials.
+                                        Laravel News is a community driven
+                                        portal and newsletter aggregating all of
+                                        the latest and most important news in
+                                        the Laravel ecosystem, including new
+                                        package releases and tutorials.
                                     </p>
                                 </div>
 
@@ -212,71 +219,73 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as{' '}
+                                        Laravel's robust library of first-party
+                                        tools and libraries, such as{" "}
                                         <a
                                             href="https://forge.laravel.com"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Forge
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://vapor.laravel.com"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Vapor
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://nova.laravel.com"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Nova
                                         </a>
-                                        , and{' '}
+                                        , and{" "}
                                         <a
                                             href="https://envoyer.io"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Envoyer
-                                        </a>{' '}
-                                        help you take your projects to the next level. Pair them with powerful open
-                                        source libraries like{' '}
+                                        </a>{" "}
+                                        help you take your projects to the next
+                                        level. Pair them with powerful open
+                                        source libraries like{" "}
                                         <a
                                             href="https://laravel.com/docs/billing"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Cashier
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://laravel.com/docs/dusk"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Dusk
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://laravel.com/docs/broadcasting"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Echo
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://laravel.com/docs/horizon"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Horizon
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://laravel.com/docs/sanctum"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                         >
                                             Sanctum
                                         </a>
-                                        ,{' '}
+                                        ,{" "}
                                         <a
                                             href="https://laravel.com/docs/telescope"
                                             className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
@@ -291,7 +300,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
 
                     <div className="flex justify-center mt-16 px-6 sm:items-center sm:justify-between">
-                        <div className="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-start">
+                        <div className="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
                             <div className="flex items-center gap-4">
                                 <a
                                     href="https://github.com/sponsors/taylorotwell"
@@ -302,7 +311,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         strokeWidth="1.5"
-                                        className="-mt-px me-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400"
+                                        className="-mt-px mr-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400"
                                     >
                                         <path
                                             strokeLinecap="round"
@@ -315,7 +324,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
 
-                        <div className="ms-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0">
+                        <div className="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
                             Laravel v{laravelVersion} (PHP v{phpVersion})
                         </div>
                     </div>

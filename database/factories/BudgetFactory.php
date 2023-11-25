@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Address;
+use App\Models\BudgetType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,10 +16,11 @@ class BudgetFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+    public function definition()
     {
         return [
             //
+            'name' => $this->faker->unique()->word()
         ];
     }
 }
