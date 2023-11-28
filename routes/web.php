@@ -42,7 +42,7 @@ Route::resource('budget', BudgetController::class)
     ->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
 
-Route::resource('budgetType', BudgetTypeController::class)
+Route::resource('budget_Type', BudgetTypeController::class)
     ->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
 

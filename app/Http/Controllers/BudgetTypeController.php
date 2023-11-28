@@ -15,7 +15,7 @@ class BudgetTypeController extends Controller
     public function index()
     {
         return Inertia::render('BudgetTypes/Index', [
-            'budgetTypes' => BudgetType::latest()->get(),
+            'budget_Types' => BudgetType::latest()->get(),
         ]);
     }
 
