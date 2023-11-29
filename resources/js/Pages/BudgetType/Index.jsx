@@ -82,4 +82,3 @@ export default function Index({ auth, budget_types }) {
         </AuthenticatedLayout>
     );
 }
-//muhjbuygv
